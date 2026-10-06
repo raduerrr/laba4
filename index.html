@@ -105,11 +105,11 @@
         <form action="/" method="post">
           <div class="form-group">
             <label for="FIO">ФИО:</label>
-            <input type="text" id="FIO" name="FIO" class="form-control" placeholder="Введите ФИО" required>
+            <input type="text" id="FIO" name="FIO" class="form-control" placeholder="Введите ФИО" pattern="^[А-Яа-яЁё\s]+$" title="ФИО должно содержать только русские буквы и пробелы" required>
           </div>
           <div class="form-group">
             <label for="ntel">Номер телефона:</label>
-            <input type="tel" id="ntel" name="ntel" class="form-control" placeholder="Введите номер телефона" required>
+            <input type="tel" id="ntel" name="ntel" class="form-control" placeholder="Введите номер телефона" pattern="^\+?\d{10,15}$" title="Номер телефона должен содержать от 10 до 15 цифр, может начинаться с плюса" required>
           </div>
           <div class="form-group">
             <label for="email">Адрес эл. почты:</label>
