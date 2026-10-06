@@ -1,0 +1,26 @@
+.custom-bg-light {
+    background-color: lightblue;
+}
+
+@media screen and (min-width: 768px) {
+    #nv {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-bottom: 2px solid #7ca6ce;
+        border-left: 2px solid #7ca6ce;
+        background-color: transparent;
+    }
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+}
+
+.custom-table thead tr {
+    background-color: lightgoldenrodyellow;
+}
+
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #c0c0c0;
+}
