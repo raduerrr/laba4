@@ -1,30 +1,54 @@
-.custom-bg-light {
+/* Mobile First: базовые стили для мобильных устройств */
+#logo,
+#ns,
+#nv {
     background-color: lightblue;
 }
 
-.form-group > label {
-    display: block;
+#logo,
+#ns {
+    min-height: 120px;
 }
 
+#logo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.link-img {
+    width: 200px;
+}
+
+#hyp,
+#tab,
+#frm,
+#footer {
+    background-color: lightblue;
+}
+
+thead tr,
+tbody tr:nth-child(even) {
+    background-color: lightgoldenrodyellow;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #c0c0c0;
+}
+
+/* Стили для экранов от 768px (брейкпоинт md в Bootstrap) */
 @media screen and (min-width: 768px) {
+    #h {
+        background-color: lightblue;
+    }
+
+    #logo,
+    #ns,
     #nv {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        border-bottom: 2px solid #7ca6ce;
-        border-left: 2px solid #7ca6ce;
         background-color: transparent;
     }
-}
 
-.custom-table tbody tr:nth-child(even) {
-    background-color: lightgoldenrodyellow;
-}
-
-.custom-table thead tr {
-    background-color: lightgoldenrodyellow;
-}
-
-.custom-table tbody tr:nth-child(odd) {
-    background-color: #c0c0c0;
+    #nv {
+        border-bottom: 2px solid #7ca6ce;
+        border-left: 2px solid #7ca6ce;
+    }
 }
