@@ -1,54 +1,26 @@
-/* Mobile First: базовые стили для мобильных устройств */
-#logo,
-#ns,
-#nv {
+.custom-bg-light {
     background-color: lightblue;
 }
 
-#logo,
-#ns {
-    min-height: 120px;
+@media screen and (min-width: 768px) {
+    #nv {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-bottom: 2px solid #7ca6ce;
+        border-left: 2px solid #7ca6ce;
+        background-color: transparent;
+    }
 }
 
-#logo img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.link-img {
-    width: 200px;
-}
-
-#hyp,
-#tab,
-#frm,
-#footer {
-    background-color: lightblue;
-}
-
-thead tr,
-tbody tr:nth-child(even) {
+.custom-table tbody tr:nth-child(even) {
     background-color: lightgoldenrodyellow;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #c0c0c0;
+.custom-table thead tr {
+    background-color: lightgoldenrodyellow;
 }
 
-/* Стили для экранов от 768px (брейкпоинт md в Bootstrap) */
-@media screen and (min-width: 768px) {
-    #h {
-        background-color: lightblue;
-    }
-
-    #logo,
-    #ns,
-    #nv {
-        background-color: transparent;
-    }
-
-    #nv {
-        border-bottom: 2px solid #7ca6ce;
-        border-left: 2px solid #7ca6ce;
-    }
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #c0c0c0;
 }
